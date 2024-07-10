@@ -75,7 +75,7 @@ export const FilmInfo = memo(function FilmInfo() {
   }, [id]);
 
   const handleGoBack = () => {
-    navigate('/');
+    navigate(import.meta.env.BASE_URL);
   };
 
   const checkId = (id: number) =>

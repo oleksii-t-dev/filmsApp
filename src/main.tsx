@@ -10,12 +10,12 @@ import { setupStore } from './store/store.ts';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: import.meta.env.BASE_URL,
     element: <App />,
     errorElement: <ErrorPage />,
   },
   {
-    path: 'film/:id',
+    path: import.meta.env.BASE_URL + 'film/:id',
     element: <FilmInfo />,
   },
 ]);
